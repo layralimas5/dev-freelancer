@@ -1,27 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
     <title>DEV Freelancer</title>
 </head>
+
 <body>
 
-    <header class="header">
-        <div class="logo-header">
-            <h2>DEV Freelancer</h2>
+    <header>
+        <a href="#" class="logo"> Portfólio</a>
+
+        <div class="nav">
+            <a href="#home">Página inicial</a>
+            <a href="#services">Meus Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Fale comigo</a>
+            <a href="#about">Sobre</a>
+
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Página inicial</a></li>
-                <li><a href="#">Nossos serviços</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Fale comigo</a></li>
-                </li>
-            </ul>
-        </nav>
     </header>
-    
+
+    <!--home section -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, Eu sou</h3>
+            <h1> Layra Lima</h1>
+            <h3> Desenvolvedora <span> Full-stack</span></h3>
+            <p> Sou uma desenvolvedora full stack versátil e habilidosa, capaz de trabalhar tanto nas partes front-end quanto back-end do desenvolvimento web. </p>
+        </div>
+
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./assets/icon.png" alt="profile-picture">
+        </div>
+    </section>
+    <!--/home section -->
+    <!--services section -->
+    <section class="services" id="services">
+        <h2>Meus <span>Serviços</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3> Desenvolvimento web</h3>
+                <p> No front-end, lido com a interface do usuário, garantindo que o site seja visualmente atraente e fácil de usar. </p>
+
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+            
+            <div class="services-box">
+                <i class='bx bx-code-block' ></i>
+                <h3> Desenvolvimento backend</h3>
+                <p> Gerenciamento da lógica do servidor e bancos de dados com linguagens como Python, Java, Ruby ou Node.js, dentre outras linguagens.</p>
+
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-mobile' ></i>
+                <h3> Desenvolvimento mobile</h3>
+                <p> Desenvolvimento de aplicações e sistemas para dispositivos móveis através do Kotlin, Java, C, C# e Flutter.</p>
+
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+            
+
+        </div>
+    </section>
+    <!--/services section -->
+
+    <!--Portfolio section-->
+
+    <section class="portfolio" id="portfolio">
+        <h2> Últimos <span>projetos</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./assets/desenvolvedor-front-end.png" alt="portfolio01"> 
+
+                <div class="portfolio-layer">
+                    <h4> Desenvolvimento Web</h4>
+                    <i class='bx bx-link-external' ></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/image1-min.jpg" alt="portfolio02"> 
+
+                <div class="portfolio-layer">
+                    <h4> Desenvolvimento mobile</h4>
+                    <i class='bx bx-link-external' ></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./assets/backend.jpg" alt="portfolio03"> 
+
+                <div class="portfolio-layer">
+                    <h4> Desenvolvimento web</h4>
+                    <i class='bx bx-link-external' ></i>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!--/Portfolio section-->
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <h2> Fale comigo</h2>
+
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Seu nome completo">
+                <input type="email" placeholder="Seu e-mail">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Seu número">
+                <input type="text" placeholder="Assunto">
+            </div>
+
+            <textarea cols="30" rows="8" placeholder="Mensagem"></textarea>
+            <a href="#" class="btn">Enviar a mensagem</a>
+        </form>
+    </section>
+
+    <!--/contact section-->
+
+    <!--about section-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/icon.png" alt="about me">
+        </div>
+
+        <div class="about-content">
+            <h3>Sobre mim</h3>
+            <h1>Desenvolvedora <span> Full Stack </span></h1>
+            <p> Sou uma desenvolvedora web e mobile que cria e mantém sites e aplicativos. Trabalho no front-end com HTML, CSS e JavaScript, e no back-end com Python, Java, Ruby ou Node.js, dentre outras linguagens. Também desenvolvo aplicativos mobile, integrando serviços e APIs, realizando testes e manutenção, e garantindo segurança. Colaboro com designers e outros desenvolvedores para entregar experiências de usuário eficientes em todas as plataformas.</p>
+            
+            <a href="#" class="btn"> Leia mais</a>
+        </div>
+    </section>
+
+    <!--/about section-->
+
+    <footer>
+        <p>Copyright &copy; 2024 by &Lt;/Layra Lima&gt;. All rights Reserved.</p>
+    </footer>
+
+
+
 </body>
+<script src="./js/script.js"></script>
+
 </html>
