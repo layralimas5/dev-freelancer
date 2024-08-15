@@ -235,10 +235,14 @@ span{
 }
 
 
-.portfolio-box img:hover{
+.portfolio-box i:hover{
     transform: scale(1.1);
 }
 
+
+.portfolio-container{
+    transform: scale(1.1);
+}
 
 
 .portfolio-box .portfolio-layer{
@@ -269,8 +273,7 @@ span{
 }
 
 .portfolio-layer a i{
-    font-size: 1.8rem;
-}
+    font-size: 2.7rem}.
 
 .portfolio-layer a{
     display: flex;
@@ -283,17 +286,18 @@ span{
 }
 
 
-.portfolio-layer a i{
-    font-size: 1.2rem;
+.portfolio-box i{
+    font-size: 2.8rem;
     color: #606cf5;
 }
 
 
+
 form {
-     max-width: 45rem;
-     margin: 0.6rem auto;
-     text-align: center;
-     margin-bottom: 2rem;
+    max-width: 45rem;
+    margin: 0.6rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
 
 }
 
@@ -380,5 +384,41 @@ footer{
 
 /* ===========>botão*/
 
+.portfolio a{
+    margin: 12px;
+}
 
 
+.portfolio-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.portfolio-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+    margin-bottom: 1rem;
+    gap: 1.2rem;
+}
+
+.portfolio-container .portfolio-box{
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-04);
+    background-color: var(--bg-color-03);
+    transition: 0.5s ease;
+}
+
+
+.portfolio-container .portfolio-box{
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-04);
+    background-color: var(--bg-color-03);
+    transition: 0.5s ease;
+}
